@@ -17,19 +17,15 @@ Then open the file "jeu.exe" in the bin directory and you're good to go.
 
 ---
 
-You can launch the game with several options.
-
-In your cmd you can type [name of the directory]/jeu.exe
-
-The option are :
+You can launch the game with several options :
 
 + -t [number]
-  + this option allows you to specify the number of boxes in the floodit grid.
+  + this option allows you to indicate the number of boxes in the floodit grid.
 
 + -c [number]
-  + This one allows you to specify the number of colors in the grid, with a maximum value of 8 colors.
+  + This one allows you to indicate the number of colors in the grid, with a maximum value of 8 colors.
 
 + -e [number]
-  + Las but not least, this one allows you to specify how many attemps you'll have to solve the floodit game.
+  + Last but not least, this one allows you to indicate how many attemps you will have in order to solve the floodit game.
   
-
+You might have to change some commands in the makefile if you're using other operating systems than windows in order to compile the program.
