@@ -318,7 +318,12 @@ void gameLoop(SDL_Renderer *renderer ,int *grille)
 						int playAgainH = WINDOW_H / 3 - LARGEUR_CASE * 2;
 						if(event.button.x >= playAgainX && event.button.x <= playAgainX + playAgainW
 							&& event.button.y >= playAgainY && event.button.y <= playAgainY + playAgainH)
-							grille = playAgain();
+							{
+								grille = playAgain();
+								char lowerText[6];
+								sprintf(lowerText, "%d-%d", NB_ESSAIS, MAX_ESSAIS);
+								displayAll(renderer, grille, "FloodIt", lowerText);
+							}
 					}
 
 					break;
